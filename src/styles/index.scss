@@ -11,3 +11,40 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body{
+    background-color: rgb(61, 93, 145);
+}
+
+
+.numberBox{
+    width: 1000px;
+    border:black solid 1px;
+    border-radius: 10px;
+    margin:auto;
+    margin-top: 10px;
+}
+
+.box{
+    width: 70px;
+    padding: 5px;
+    margin:10px;
+    height: 100px;
+    background: rgb(41, 40, 40);
+    color: white;
+    font-size: 40px;
+    line-height: 90px;
+    border-radius: 10px;
+}
+
+.icono{
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+    height: 100px;
+    background: rgb(41, 40, 40);
+    color: white;
+    font-size: 50px;
+    line-height: 90px;
+    border-radius: 10px;
+}

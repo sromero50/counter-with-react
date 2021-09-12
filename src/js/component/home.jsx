@@ -1,26 +1,86 @@
 import React from "react";
-
+import PropTypes from "prop-types";
+import Number from "./number";
+import Icono from "./icono";
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
+const Home = props => {
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container-fluid  row d-flex justify-content-center bg-dark numberBox ">
+			{" "}
+			<Icono />
+			<div className="box">
+				<h1 className="text-center">{props.sixthCounter}</h1>
+			</div>
+			<div className="box">
+				<h1 className="text-center">{props.fifthCounter}</h1>
+			</div>
+			<div className="box">
+				<h1 className="text-center">{props.forthCounter}</h1>
+			</div>
+			<div className="box">
+				<h1 className="text-center">{props.thirdCounter}</h1>
+			</div>
+			<div className="box">
+				<h1 className="text-center">{props.secondCounter}</h1>
+			</div>
+			<div className="box">
+				<h1 className="text-center">{props.firstCounter}</h1>
+			</div>
 		</div>
 	);
 };
 
+Home.propTypes = {
+	firstCounter: PropTypes.number,
+	secondCounter: PropTypes.number,
+	thirdCounter: PropTypes.number,
+	forthCounter: PropTypes.number,
+	fifthCounter: PropTypes.number,
+	sixthCounter: PropTypes.number
+};
+
 export default Home;
+
+// const NumberBox = props => {
+// 	let counter = 0;
+// 	return setInterval(function() {
+// 		<div className="container-fluid  row d-flex justify-content-center bg-dark numberBox ">
+// 			<Icono />
+// 			<div className="box">
+// 				<h1 className="text-center"></h1>
+// 			</div>
+// 			<div className="box">
+// 				<h1 className="text-center">{props.sixthCounter}</h1>
+// 			</div>
+// 			<div className="box">
+// 				<h1 className="text-center">{props.fifthCounter}</h1>
+// 			</div>
+// 			<div className="box">
+// 				<h1 className="text-center">{props.forthCounter}</h1>
+// 			</div>
+// 			<div className="box">
+// 				<h1 className="text-center">{props.thirdCounter}</h1>
+// 			</div>
+// 			<div className="box">
+// 				<h1 className="text-center">{props.secondCounter}</h1>
+// 			</div>
+// 			<div className="box">
+// 				<h1 className="text-center">{props.firstCounter}</h1>
+// 			</div>
+// 		</div>;
+// 		counter++;
+// 	}, 1000);
+// };
+
+// NumberBox.propTypes = {
+// 	firstCounter: PropTypes.number,
+// 	secondCounter: PropTypes.number,
+// 	thirdCounter: PropTypes.number,
+// 	forthCounter: PropTypes.number,
+// 	fifthCounter: PropTypes.number,
+// 	sixthCounter: PropTypes.number
+// };
+
+// export default NumberBox;
