@@ -70,6 +70,7 @@ const Home = () => {
 				<button id="stop" onClick={stop}>
 					Stop
 				</button>
+		////// Start Button (viendo como se hace) ///////////////////////////////////
 				<button id="start">Start</button>
 			</div>
 		</div>
