@@ -1,15 +1,11 @@
 import React from "react";
-import Number from "./number";
 import Icono from "./icono";
 import PropTypes from "prop-types";
+
 const NumberBox = props => {
-	let counter = 0;
-	return setInterval(function() {
+	return (
 		<div className="container-fluid  row d-flex justify-content-center bg-dark numberBox ">
 			<Icono />
-			<div className="box">
-				<h1 className="text-center"></h1>
-			</div>
 			<div className="box">
 				<h1 className="text-center">{props.sixthCounter}</h1>
 			</div>
@@ -28,9 +24,8 @@ const NumberBox = props => {
 			<div className="box">
 				<h1 className="text-center">{props.firstCounter}</h1>
 			</div>
-		</div>;
-		counter++;
-	}, 1000);
+		</div>
+	);
 };
 
 NumberBox.propTypes = {
