@@ -28,7 +28,7 @@ const Home = () => {
 			clearInterval(interval);
 		});
 	}
-	////// Start Button////////////////////////////////////
+	////// Start Button no funciona todavia////////////////////////////////////
 	// function start() {
 	// 	let boton = document.querySelector("#start");
 	// 	boton.addEventListener("click", function() {
@@ -70,7 +70,6 @@ const Home = () => {
 				<button id="stop" onClick={stop}>
 					Stop
 				</button>
-		////// Start Button (viendo como se hace) ///////////////////////////////////
 				<button id="start">Start</button>
 			</div>
 		</div>
